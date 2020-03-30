@@ -14,7 +14,7 @@ const getItems = async searchTerm => {
         
         itemNodeList.forEach(item => {
             const itemTitle = item.querySelector('div > div > span > div > a > div > div > div > span > div > span > div[class="l9j0dhe7 stjgntxs ni8dbmo4"').innerText;
-            const itemPrice = item.querySelector('div > div > span > div > a > div > div > div > div > span[class="oi732d6d ik7dh3pa d2edcug0 qv66sw1b c1et5uql a8c37x1j s89635nw ew0dbk1b a5q79mjw g1cxx5fr lrazzd5p oo9gr5id"').innerText;
+            const itemPrice = parseFloat(item.querySelector('div > div > span > div > a > div > div > div > div > span[class="oi732d6d ik7dh3pa d2edcug0 qv66sw1b c1et5uql a8c37x1j s89635nw ew0dbk1b a5q79mjw g1cxx5fr lrazzd5p oo9gr5id"').innerText);
             const itemURL = `https://facebook.com/${item.getAttribute('href')}`;
             const itemImg = item.querySelector('div > div > span > div > a > div > div > div > div > div > div > img').getAttribute('src');
             
