@@ -1,3 +1,10 @@
 Facebook_Marketplace_Webscraper
 
----include pupeteer library
+---include pupeteer library (node module)
+
+---declare asyn function with parameter of search term
+-----declare a browser and wait for puppeteer to launch the browser
+-----create a page --> new tab in internet browser
+-------navigate to facebook marketplace via puppeteer and search for searchterm
+---------declare itemlist and wait for specific selector
+-----------if selector found --> go ahead
